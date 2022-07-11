@@ -14,6 +14,7 @@ class BookLoverTestSuite:
         return BookLover.has_read(test1, "Test Book")
 
     def test_2_add_book(self):
+        test2 = BookLover("Test", "Test@Test.com", "Test")
         test2.add_book("Test Book 1", 4)
         test2.add_book("Test Book 1", 4)
         x = BookLover.books(test2)["Test Book 1"]
